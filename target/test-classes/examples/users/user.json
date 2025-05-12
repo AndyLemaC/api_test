@@ -1,0 +1,22 @@
+{
+  "createUser": {
+    "id": 987654321,
+    "username": "andylema",
+    "firstName": "Andy",
+    "lastName": "Lema",
+    "email": "andy_lema@test.com",
+    "password": "Password123",
+    "phone": "+1 (555) 123-4567",
+    "userStatus": 1
+  },
+  "updateUser": {
+    "id": 987654321,
+    "username": "andylema",
+    "firstName": "Andy",
+    "lastName": "Lema",
+    "email": "vladimirlema25@test.com",
+    "password": "Password123",
+    "phone": "+1 (555) 123-4567",
+    "userStatus": 1
+  }
+}
