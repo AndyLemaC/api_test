@@ -1,0 +1,1977 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="examples.users.UsersRunnerTest" time="130.554" tests="7" errors="0" skipped="0" failures="4">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\andyn\OneDrive\Documents\Proyecto_QA\petstore-api-test\target\test-classes;C:\Users\andyn\OneDrive\Documents\Proyecto_QA\petstore-api-test\target\classes;C:\Users\andyn\.m2\repository\com\intuit\karate\karate-junit5\1.4.1\karate-junit5-1.4.1.jar;C:\Users\andyn\.m2\repository\com\intuit\karate\karate-core\1.4.1\karate-core-1.4.1.jar;C:\Users\andyn\.m2\repository\org\graalvm\js\js-scriptengine\22.3.3\js-scriptengine-22.3.3.jar;C:\Users\andyn\.m2\repository\org\graalvm\sdk\graal-sdk\22.3.3\graal-sdk-22.3.3.jar;C:\Users\andyn\.m2\repository\org\graalvm\js\js\22.3.3\js-22.3.3.jar;C:\Users\andyn\.m2\repository\org\graalvm\regex\regex\22.3.3\regex-22.3.3.jar;C:\Users\andyn\.m2\repository\org\graalvm\truffle\truffle-api\22.3.3\truffle-api-22.3.3.jar;C:\Users\andyn\.m2\repository\com\ibm\icu\icu4j\71.1\icu4j-71.1.jar;C:\Users\andyn\.m2\repository\org\thymeleaf\thymeleaf\3.1.2.RELEASE\thymeleaf-3.1.2.RELEASE.jar;C:\Users\andyn\.m2\repository\ognl\ognl\3.3.4\ognl-3.3.4.jar;C:\Users\andyn\.m2\repository\org\javassist\javassist\3.29.0-GA\javassist-3.29.0-GA.jar;C:\Users\andyn\.m2\repository\org\attoparser\attoparser\2.0.7.RELEASE\attoparser-2.0.7.RELEASE.jar;C:\Users\andyn\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\andyn\.m2\repository\com\linecorp\armeria\armeria\1.25.2\armeria-1.25.2.jar;C:\Users\andyn\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.2\jackson-core-2.15.2.jar;C:\Users\andyn\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.2\jackson-annotations-2.15.2.jar;C:\Users\andyn\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.2\jackson-databind-2.15.2.jar;C:\Users\andyn\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.2\jackson-datatype-jdk8-2.15.2.jar;C:\Users\andyn\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.2\jackson-datatype-jsr310-2.15.2.jar;C:\Users\andyn\.m2\repository\io\micrometer\micrometer-core\1.11.3\micrometer-core-1.11.3.jar;C:\Users\andyn\.m2\repository\io\micrometer\micrometer-commons\1.11.3\micrometer-commons-1.11.3.jar;C:\Users\andyn\.m2\repository\io\micrometer\micrometer-observation\1.11.3\micrometer-observation-1.11.3.jar;C:\Users\andyn\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.12\HdrHistogram-2.1.12.jar;C:\Users\andyn\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\andyn\.m2\repository\io\netty\netty-transport\4.1.96.Final\netty-transport-4.1.96.Final.jar;C:\Users\andyn\.m2\repository\io\netty\netty-common\4.1.96.Final\netty-common-4.1.96.Final.jar;C:\Users\andyn\.m2\repository\io\netty\netty-buffer\4.1.96.Final\netty-buffer-4.1.96.Final.jar;C:\Users\andyn\.m2\repository\io\netty\netty-resolver\4.1.96.Final\netty-resolver-4.1.96.Final.jar;C:\Users\andyn\.m2\repository\io\netty\netty-codec-haproxy\4.1.96.Final\netty-codec-haproxy-4.1.96.Final.jar;C:\Users\andyn\.m2\repository\io\netty\netty-codec\4.1.96.Final\netty-codec-4.1.96.Final.jar;C:\Users\andyn\.m2\repository\io\netty\netty-codec-http2\4.1.96.Final\netty-codec-http2-4.1.96.Final.jar;C:\Users\andyn\.m2\repository\io\netty\netty-handler\4.1.96.Final\netty-handler-4.1.96.Final.jar;C:\Users\andyn\.m2\repository\io\netty\netty-codec-http\4.1.96.Final\netty-codec-http-4.1.96.Final.jar;C:\Users\andyn\.m2\repository\io\netty\netty-resolver-dns\4.1.96.Final\netty-resolver-dns-4.1.96.Final.jar;C:\Users\andyn\.m2\repository\io\netty\netty-codec-dns\4.1.96.Final\netty-codec-dns-4.1.96.Final.jar;C:\Users\andyn\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\andyn\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\andyn\.m2\repository\io\netty\netty-handler-proxy\4.1.96.Final\netty-handler-proxy-4.1.96.Final.jar;C:\Users\andyn\.m2\repository\io\netty\netty-codec-socks\4.1.96.Final\netty-codec-socks-4.1.96.Final.jar;C:\Users\andyn\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.96.Final\netty-transport-native-unix-common-4.1.96.Final-linux-x86_64.jar;C:\Users\andyn\.m2\repository\io\netty\netty-transport-native-epoll\4.1.96.Final\netty-transport-native-epoll-4.1.96.Final-linux-x86_64.jar;C:\Users\andyn\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.96.Final\netty-transport-native-unix-common-4.1.96.Final.jar;C:\Users\andyn\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.96.Final\netty-transport-classes-epoll-4.1.96.Final.jar;C:\Users\andyn\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.96.Final\netty-transport-native-unix-common-4.1.96.Final-linux-aarch_64.jar;C:\Users\andyn\.m2\repository\io\netty\netty-transport-native-epoll\4.1.96.Final\netty-transport-native-epoll-4.1.96.Final-linux-aarch_64.jar;C:\Users\andyn\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.96.Final\netty-transport-native-unix-common-4.1.96.Final-osx-x86_64.jar;C:\Users\andyn\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.96.Final\netty-transport-native-kqueue-4.1.96.Final-osx-x86_64.jar;C:\Users\andyn\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.96.Final\netty-transport-classes-kqueue-4.1.96.Final.jar;C:\Users\andyn\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.96.Final\netty-resolver-dns-native-macos-4.1.96.Final-osx-x86_64.jar;C:\Users\andyn\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.96.Final\netty-resolver-dns-classes-macos-4.1.96.Final.jar;C:\Users\andyn\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.96.Final\netty-transport-native-unix-common-4.1.96.Final-osx-aarch_64.jar;C:\Users\andyn\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.96.Final\netty-transport-native-kqueue-4.1.96.Final-osx-aarch_64.jar;C:\Users\andyn\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.96.Final\netty-resolver-dns-native-macos-4.1.96.Final-osx-aarch_64.jar;C:\Users\andyn\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.61.Final\netty-tcnative-boringssl-static-2.0.61.Final-linux-x86_64.jar;C:\Users\andyn\.m2\repository\io\netty\netty-tcnative-classes\2.0.61.Final\netty-tcnative-classes-2.0.61.Final.jar;C:\Users\andyn\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.61.Final\netty-tcnative-boringssl-static-2.0.61.Final-linux-aarch_64.jar;C:\Users\andyn\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.61.Final\netty-tcnative-boringssl-static-2.0.61.Final-osx-x86_64.jar;C:\Users\andyn\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.61.Final\netty-tcnative-boringssl-static-2.0.61.Final-osx-aarch_64.jar;C:\Users\andyn\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.61.Final\netty-tcnative-boringssl-static-2.0.61.Final-windows-x86_64.jar;C:\Users\andyn\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.12.0\brotli4j-1.12.0.jar;C:\Users\andyn\.m2\repository\com\aayushatharva\brotli4j\service\1.12.0\service-1.12.0.jar;C:\Users\andyn\.m2\repository\com\aayushatharva\brotli4j\native-windows-x86_64\1.12.0\native-windows-x86_64-1.12.0.jar;C:\Users\andyn\.m2\repository\org\apache\httpcomponents\httpclient\4.5.14\httpclient-4.5.14.jar;C:\Users\andyn\.m2\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;C:\Users\andyn\.m2\repository\commons-codec\commons-codec\1.16.0\commons-codec-1.16.0.jar;C:\Users\andyn\.m2\repository\org\slf4j\jcl-over-slf4j\2.0.9\jcl-over-slf4j-2.0.9.jar;C:\Users\andyn\.m2\repository\org\antlr\antlr4-runtime\4.11.1\antlr4-runtime-4.11.1.jar;C:\Users\andyn\.m2\repository\org\yaml\snakeyaml\2.0\snakeyaml-2.0.jar;C:\Users\andyn\.m2\repository\de\siegmar\fastcsv\2.2.1\fastcsv-2.2.1.jar;C:\Users\andyn\.m2\repository\info\picocli\picocli\4.7.1\picocli-4.7.1.jar;C:\Users\andyn\.m2\repository\io\github\classgraph\classgraph\4.8.160\classgraph-4.8.160.jar;C:\Users\andyn\.m2\repository\io\github\t12y\resemble\1.0.2\resemble-1.0.2.jar;C:\Users\andyn\.m2\repository\io\github\t12y\ssim\1.0.0\ssim-1.0.0.jar;C:\Users\andyn\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.3\junit-jupiter-api-5.9.3.jar;C:\Users\andyn\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\andyn\.m2\repository\org\junit\platform\junit-platform-commons\1.9.3\junit-platform-commons-1.9.3.jar;C:\Users\andyn\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\andyn\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.3\junit-jupiter-engine-5.9.3.jar;C:\Users\andyn\.m2\repository\org\junit\platform\junit-platform-engine\1.9.3\junit-platform-engine-1.9.3.jar;C:\Users\andyn\.m2\repository\com\jayway\jsonpath\json-path\2.7.0\json-path-2.7.0.jar;C:\Users\andyn\.m2\repository\net\minidev\json-smart\2.4.7\json-smart-2.4.7.jar;C:\Users\andyn\.m2\repository\net\minidev\accessors-smart\2.4.7\accessors-smart-2.4.7.jar;C:\Users\andyn\.m2\repository\org\ow2\asm\asm\9.1\asm-9.1.jar;C:\Users\andyn\.m2\repository\ch\qos\logback\logback-classic\1.2.11\logback-classic-1.2.11.jar;C:\Users\andyn\.m2\repository\ch\qos\logback\logback-core\1.2.11\logback-core-1.2.11.jar;C:\Users\andyn\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="user.timezone" value="America/Guayaquil"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="ES"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11\bin"/>
+    <property name="sun.java.command" value="C:\Users\andyn\AppData\Local\Temp\surefire1802166665125048319\surefirebooter-20250511235914637_3.jar C:\Users\andyn\AppData\Local\Temp\surefire1802166665125048319 2025-05-11T23-59-14_473-jvmRun1 surefire-20250511235914637_1tmp surefire_0-20250511235914637_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\andyn\OneDrive\Documents\Proyecto_QA\petstore-api-test\target\test-classes;C:\Users\andyn\OneDrive\Documents\Proyecto_QA\petstore-api-test\target\classes;C:\Users\andyn\.m2\repository\com\intuit\karate\karate-junit5\1.4.1\karate-junit5-1.4.1.jar;C:\Users\andyn\.m2\repository\com\intuit\karate\karate-core\1.4.1\karate-core-1.4.1.jar;C:\Users\andyn\.m2\repository\org\graalvm\js\js-scriptengine\22.3.3\js-scriptengine-22.3.3.jar;C:\Users\andyn\.m2\repository\org\graalvm\sdk\graal-sdk\22.3.3\graal-sdk-22.3.3.jar;C:\Users\andyn\.m2\repository\org\graalvm\js\js\22.3.3\js-22.3.3.jar;C:\Users\andyn\.m2\repository\org\graalvm\regex\regex\22.3.3\regex-22.3.3.jar;C:\Users\andyn\.m2\repository\org\graalvm\truffle\truffle-api\22.3.3\truffle-api-22.3.3.jar;C:\Users\andyn\.m2\repository\com\ibm\icu\icu4j\71.1\icu4j-71.1.jar;C:\Users\andyn\.m2\repository\org\thymeleaf\thymeleaf\3.1.2.RELEASE\thymeleaf-3.1.2.RELEASE.jar;C:\Users\andyn\.m2\repository\ognl\ognl\3.3.4\ognl-3.3.4.jar;C:\Users\andyn\.m2\repository\org\javassist\javassist\3.29.0-GA\javassist-3.29.0-GA.jar;C:\Users\andyn\.m2\repository\org\attoparser\attoparser\2.0.7.RELEASE\attoparser-2.0.7.RELEASE.jar;C:\Users\andyn\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\andyn\.m2\repository\com\linecorp\armeria\armeria\1.25.2\armeria-1.25.2.jar;C:\Users\andyn\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.2\jackson-core-2.15.2.jar;C:\Users\andyn\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.2\jackson-annotations-2.15.2.jar;C:\Users\andyn\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.2\jackson-databind-2.15.2.jar;C:\Users\andyn\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.2\jackson-datatype-jdk8-2.15.2.jar;C:\Users\andyn\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.2\jackson-datatype-jsr310-2.15.2.jar;C:\Users\andyn\.m2\repository\io\micrometer\micrometer-core\1.11.3\micrometer-core-1.11.3.jar;C:\Users\andyn\.m2\repository\io\micrometer\micrometer-commons\1.11.3\micrometer-commons-1.11.3.jar;C:\Users\andyn\.m2\repository\io\micrometer\micrometer-observation\1.11.3\micrometer-observation-1.11.3.jar;C:\Users\andyn\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.12\HdrHistogram-2.1.12.jar;C:\Users\andyn\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\andyn\.m2\repository\io\netty\netty-transport\4.1.96.Final\netty-transport-4.1.96.Final.jar;C:\Users\andyn\.m2\repository\io\netty\netty-common\4.1.96.Final\netty-common-4.1.96.Final.jar;C:\Users\andyn\.m2\repository\io\netty\netty-buffer\4.1.96.Final\netty-buffer-4.1.96.Final.jar;C:\Users\andyn\.m2\repository\io\netty\netty-resolver\4.1.96.Final\netty-resolver-4.1.96.Final.jar;C:\Users\andyn\.m2\repository\io\netty\netty-codec-haproxy\4.1.96.Final\netty-codec-haproxy-4.1.96.Final.jar;C:\Users\andyn\.m2\repository\io\netty\netty-codec\4.1.96.Final\netty-codec-4.1.96.Final.jar;C:\Users\andyn\.m2\repository\io\netty\netty-codec-http2\4.1.96.Final\netty-codec-http2-4.1.96.Final.jar;C:\Users\andyn\.m2\repository\io\netty\netty-handler\4.1.96.Final\netty-handler-4.1.96.Final.jar;C:\Users\andyn\.m2\repository\io\netty\netty-codec-http\4.1.96.Final\netty-codec-http-4.1.96.Final.jar;C:\Users\andyn\.m2\repository\io\netty\netty-resolver-dns\4.1.96.Final\netty-resolver-dns-4.1.96.Final.jar;C:\Users\andyn\.m2\repository\io\netty\netty-codec-dns\4.1.96.Final\netty-codec-dns-4.1.96.Final.jar;C:\Users\andyn\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\andyn\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\andyn\.m2\repository\io\netty\netty-handler-proxy\4.1.96.Final\netty-handler-proxy-4.1.96.Final.jar;C:\Users\andyn\.m2\repository\io\netty\netty-codec-socks\4.1.96.Final\netty-codec-socks-4.1.96.Final.jar;C:\Users\andyn\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.96.Final\netty-transport-native-unix-common-4.1.96.Final-linux-x86_64.jar;C:\Users\andyn\.m2\repository\io\netty\netty-transport-native-epoll\4.1.96.Final\netty-transport-native-epoll-4.1.96.Final-linux-x86_64.jar;C:\Users\andyn\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.96.Final\netty-transport-native-unix-common-4.1.96.Final.jar;C:\Users\andyn\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.96.Final\netty-transport-classes-epoll-4.1.96.Final.jar;C:\Users\andyn\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.96.Final\netty-transport-native-unix-common-4.1.96.Final-linux-aarch_64.jar;C:\Users\andyn\.m2\repository\io\netty\netty-transport-native-epoll\4.1.96.Final\netty-transport-native-epoll-4.1.96.Final-linux-aarch_64.jar;C:\Users\andyn\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.96.Final\netty-transport-native-unix-common-4.1.96.Final-osx-x86_64.jar;C:\Users\andyn\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.96.Final\netty-transport-native-kqueue-4.1.96.Final-osx-x86_64.jar;C:\Users\andyn\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.96.Final\netty-transport-classes-kqueue-4.1.96.Final.jar;C:\Users\andyn\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.96.Final\netty-resolver-dns-native-macos-4.1.96.Final-osx-x86_64.jar;C:\Users\andyn\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.96.Final\netty-resolver-dns-classes-macos-4.1.96.Final.jar;C:\Users\andyn\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.96.Final\netty-transport-native-unix-common-4.1.96.Final-osx-aarch_64.jar;C:\Users\andyn\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.96.Final\netty-transport-native-kqueue-4.1.96.Final-osx-aarch_64.jar;C:\Users\andyn\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.96.Final\netty-resolver-dns-native-macos-4.1.96.Final-osx-aarch_64.jar;C:\Users\andyn\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.61.Final\netty-tcnative-boringssl-static-2.0.61.Final-linux-x86_64.jar;C:\Users\andyn\.m2\repository\io\netty\netty-tcnative-classes\2.0.61.Final\netty-tcnative-classes-2.0.61.Final.jar;C:\Users\andyn\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.61.Final\netty-tcnative-boringssl-static-2.0.61.Final-linux-aarch_64.jar;C:\Users\andyn\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.61.Final\netty-tcnative-boringssl-static-2.0.61.Final-osx-x86_64.jar;C:\Users\andyn\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.61.Final\netty-tcnative-boringssl-static-2.0.61.Final-osx-aarch_64.jar;C:\Users\andyn\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.61.Final\netty-tcnative-boringssl-static-2.0.61.Final-windows-x86_64.jar;C:\Users\andyn\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.12.0\brotli4j-1.12.0.jar;C:\Users\andyn\.m2\repository\com\aayushatharva\brotli4j\service\1.12.0\service-1.12.0.jar;C:\Users\andyn\.m2\repository\com\aayushatharva\brotli4j\native-windows-x86_64\1.12.0\native-windows-x86_64-1.12.0.jar;C:\Users\andyn\.m2\repository\org\apache\httpcomponents\httpclient\4.5.14\httpclient-4.5.14.jar;C:\Users\andyn\.m2\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;C:\Users\andyn\.m2\repository\commons-codec\commons-codec\1.16.0\commons-codec-1.16.0.jar;C:\Users\andyn\.m2\repository\org\slf4j\jcl-over-slf4j\2.0.9\jcl-over-slf4j-2.0.9.jar;C:\Users\andyn\.m2\repository\org\antlr\antlr4-runtime\4.11.1\antlr4-runtime-4.11.1.jar;C:\Users\andyn\.m2\repository\org\yaml\snakeyaml\2.0\snakeyaml-2.0.jar;C:\Users\andyn\.m2\repository\de\siegmar\fastcsv\2.2.1\fastcsv-2.2.1.jar;C:\Users\andyn\.m2\repository\info\picocli\picocli\4.7.1\picocli-4.7.1.jar;C:\Users\andyn\.m2\repository\io\github\classgraph\classgraph\4.8.160\classgraph-4.8.160.jar;C:\Users\andyn\.m2\repository\io\github\t12y\resemble\1.0.2\resemble-1.0.2.jar;C:\Users\andyn\.m2\repository\io\github\t12y\ssim\1.0.0\ssim-1.0.0.jar;C:\Users\andyn\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.3\junit-jupiter-api-5.9.3.jar;C:\Users\andyn\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\andyn\.m2\repository\org\junit\platform\junit-platform-commons\1.9.3\junit-platform-commons-1.9.3.jar;C:\Users\andyn\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\andyn\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.3\junit-jupiter-engine-5.9.3.jar;C:\Users\andyn\.m2\repository\org\junit\platform\junit-platform-engine\1.9.3\junit-platform-engine-1.9.3.jar;C:\Users\andyn\.m2\repository\com\jayway\jsonpath\json-path\2.7.0\json-path-2.7.0.jar;C:\Users\andyn\.m2\repository\net\minidev\json-smart\2.4.7\json-smart-2.4.7.jar;C:\Users\andyn\.m2\repository\net\minidev\accessors-smart\2.4.7\accessors-smart-2.4.7.jar;C:\Users\andyn\.m2\repository\org\ow2\asm\asm\9.1\asm-9.1.jar;C:\Users\andyn\.m2\repository\ch\qos\logback\logback-classic\1.2.11\logback-classic-1.2.11.jar;C:\Users\andyn\.m2\repository\ch\qos\logback\logback-core\1.2.11\logback-core-1.2.11.jar;C:\Users\andyn\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\andyn"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-07-18"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-11"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\andyn\OneDrive\Documents\Proyecto_QA\petstore-api-test"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\andyn\AppData\Local\Temp\surefire1802166665125048319\surefirebooter-20250511235914637_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.20+9-LTS-256"/>
+    <property name="user.name" value="andyn"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="localRepository" value="C:\Users\andyn\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\andyn\AppData\Local\Temp\"/>
+    <property name="java.version" value="11.0.20"/>
+    <property name="user.dir" value="C:\Users\andyn\OneDrive\Documents\Proyecto_QA\petstore-api-test"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-11\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\dotnet\;C:\Program Files\NVIDIA Corporation\NVIDIA app\NvDLISR;C:\Program Files\Java\jdk-11\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Users\andyn\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Maven\apache-maven-3.8.8\bin;C:\Users\andyn\AppData\Local\Microsoft\WindowsApps;C:\Users\andyn\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\andyn\AppData\Roaming\npm;C:\Users\andyn\AppData\Local\nvm;C:\nvm4w\nodejs;;."/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="11.0.20+9-LTS-256"/>
+    <property name="java.specification.maintenance.version" value="2"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="[1:13] CRUD completo para un usuario" classname="examples/users/user-crud-sequential" time="3.395">
+    <failure message="status code was: 404, expected: 200, response time in milliseconds: 266, url: https://petstore.swagger.io/v2/user/user_b021b10f-59ce-4e0e-85af-c9f655d16552, response: &#10;&#10;classpath:examples/users/user-crud-sequential.feature:63" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+status code was: 404, expected: 200, response time in milliseconds: 266, url: https://petstore.swagger.io/v2/user/user_b021b10f-59ce-4e0e-85af-c9f655d16552, response: 
+
+classpath:examples/users/user-crud-sequential.feature:63
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:135)
+	at com.intuit.karate.junit5.FeatureNode.lambda$next$1(FeatureNode.java:86)
+	at org.junit.jupiter.engine.descriptor.DynamicTestTestDescriptor.lambda$execute$0(DynamicTestTestDescriptor.java:53)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.api.extension.InvocationInterceptor.interceptDynamicTest(InvocationInterceptor.java:167)
+	at org.junit.jupiter.api.extension.InvocationInterceptor.interceptDynamicTest(InvocationInterceptor.java:184)
+	at org.junit.jupiter.engine.descriptor.DynamicTestTestDescriptor.lambda$execute$1(DynamicTestTestDescriptor.java:61)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptorCall.lambda$ofVoid$0(InvocationInterceptorChain.java:78)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.descriptor.DynamicTestTestDescriptor.execute(DynamicTestTestDescriptor.java:60)
+	at org.junit.jupiter.engine.descriptor.DynamicTestTestDescriptor.execute(DynamicTestTestDescriptor.java:32)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor.execute(NodeTestTask.java:226)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor.execute(NodeTestTask.java:204)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEachOrdered(ReferencePipeline.java:502)
+	at org.junit.jupiter.engine.descriptor.DynamicContainerTestDescriptor.execute(DynamicContainerTestDescriptor.java:67)
+	at org.junit.jupiter.engine.descriptor.DynamicContainerTestDescriptor.execute(DynamicContainerTestDescriptor.java:33)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor.execute(NodeTestTask.java:226)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor.execute(NodeTestTask.java:204)
+	at java.base/java.util.Optional.ifPresent(Optional.java:183)
+	at org.junit.jupiter.engine.descriptor.TestFactoryTestDescriptor.lambda$invokeTestMethod$1(TestFactoryTestDescriptor.java:108)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestFactoryTestDescriptor.invokeTestMethod(TestFactoryTestDescriptor.java:95)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:50)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[23:59:15.563 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:59:16.526 [main] DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/v2/store/inventory
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:59:17.090 [main] DEBUG com.intuit.karate - response time in milliseconds: 556
+1 < 200
+1 < Date: Mon, 12 May 2025 04:59:17 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{
+  "sold": 5,
+  "EVOMASTER": 1,
+  "string": 356,
+  "pending": 4,
+  "available": 29,
+  "not available": 1,
+  "invalid": 6
+}
+
+
+23:59:17.094 [main] INFO  com.intuit.karate - [print] API está activa 
+23:59:17.124 [main] DEBUG com.intuit.karate - request:
+2 > POST https://petstore.swagger.io/v2/user
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 198
+2 > Host: petstore.swagger.io
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+2 > Accept-Encoding: gzip,deflate
+{
+  "id": 123456789,
+  "username": "user_b021b10f-59ce-4e0e-85af-c9f655d16552",
+  "firstName": "Andy",
+  "lastName": "Lema",
+  "email": "andy.lema@test.com",
+  "password": "Password123",
+  "phone": "0987654321",
+  "userStatus": 1
+}
+
+
+23:59:17.397 [main] DEBUG com.intuit.karate - response time in milliseconds: 272
+2 < 200
+2 < Date: Mon, 12 May 2025 04:59:17 GMT
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < Access-Control-Allow-Origin: *
+2 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+2 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+2 < Server: Jetty(9.2.9.v20150224)
+{
+  "code": 200,
+  "type": "unknown",
+  "message": "123456789"
+}
+
+
+23:59:17.399 [main] INFO  com.intuit.karate - [print] Usuario creado: user_b021b10f-59ce-4e0e-85af-c9f655d16552 
+23:59:17.424 [main] DEBUG com.intuit.karate - request:
+3 > GET https://petstore.swagger.io/v2/user/user_b021b10f-59ce-4e0e-85af-c9f655d16552
+3 > Host: petstore.swagger.io
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+3 > Accept-Encoding: gzip,deflate
+
+
+23:59:17.690 [main] DEBUG com.intuit.karate - response time in milliseconds: 265
+3 < 200
+3 < Date: Mon, 12 May 2025 04:59:17 GMT
+3 < Content-Type: application/json
+3 < Transfer-Encoding: chunked
+3 < Connection: keep-alive
+3 < Access-Control-Allow-Origin: *
+3 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+3 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+3 < Server: Jetty(9.2.9.v20150224)
+{
+  "id": 123456789,
+  "username": "user_b021b10f-59ce-4e0e-85af-c9f655d16552",
+  "firstName": "Andy",
+  "lastName": "Lema",
+  "email": "andy.lema@test.com",
+  "password": "Password123",
+  "phone": "0987654321",
+  "userStatus": 1
+}
+
+
+23:59:17.699 [main] INFO  com.intuit.karate - [print] Usuario encontrado después de reintentos: user_b021b10f-59ce-4e0e-85af-c9f655d16552 
+23:59:17.704 [main] DEBUG com.intuit.karate - request:
+4 > PUT https://petstore.swagger.io/v2/user/user_b021b10f-59ce-4e0e-85af-c9f655d16552
+4 > Content-Type: application/json; charset=UTF-8
+4 > Content-Length: 218
+4 > Host: petstore.swagger.io
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+4 > Accept-Encoding: gzip,deflate
+{
+  "id": 123456789,
+  "username": "user_b021b10f-59ce-4e0e-85af-c9f655d16552",
+  "firstName": "AndyUpdated",
+  "lastName": "LemaUpdated",
+  "email": "andy.updated@test.com",
+  "password": "NewPassword123",
+  "phone": "0999999999",
+  "userStatus": 1
+}
+
+
+23:59:17.968 [main] DEBUG com.intuit.karate - response time in milliseconds: 264
+4 < 200
+4 < Date: Mon, 12 May 2025 04:59:18 GMT
+4 < Content-Type: application/json
+4 < Transfer-Encoding: chunked
+4 < Connection: keep-alive
+4 < Access-Control-Allow-Origin: *
+4 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+4 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+4 < Server: Jetty(9.2.9.v20150224)
+{
+  "code": 200,
+  "type": "unknown",
+  "message": "123456789"
+}
+
+
+23:59:17.972 [main] DEBUG com.intuit.karate - request:
+5 > GET https://petstore.swagger.io/v2/user/user_b021b10f-59ce-4e0e-85af-c9f655d16552
+5 > Host: petstore.swagger.io
+5 > Connection: Keep-Alive
+5 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+5 > Accept-Encoding: gzip,deflate
+
+
+23:59:18.239 [main] DEBUG com.intuit.karate - response time in milliseconds: 266
+5 < 200
+5 < Date: Mon, 12 May 2025 04:59:18 GMT
+5 < Content-Type: application/json
+5 < Transfer-Encoding: chunked
+5 < Connection: keep-alive
+5 < Access-Control-Allow-Origin: *
+5 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+5 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+5 < Server: Jetty(9.2.9.v20150224)
+{
+  "id": 123456789,
+  "username": "user_b021b10f-59ce-4e0e-85af-c9f655d16552",
+  "firstName": "AndyUpdated",
+  "lastName": "LemaUpdated",
+  "email": "andy.updated@test.com",
+  "password": "NewPassword123",
+  "phone": "0999999999",
+  "userStatus": 1
+}
+
+
+23:59:18.242 [main] INFO  com.intuit.karate - [print] Usuario actualizado encontrado después de reintentos: user_b021b10f-59ce-4e0e-85af-c9f655d16552 
+23:59:18.248 [main] DEBUG com.intuit.karate - request:
+6 > DELETE https://petstore.swagger.io/v2/user/user_b021b10f-59ce-4e0e-85af-c9f655d16552
+6 > Host: petstore.swagger.io
+6 > Connection: Keep-Alive
+6 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+6 > Accept-Encoding: gzip,deflate
+
+
+23:59:18.514 [main] DEBUG com.intuit.karate - response time in milliseconds: 266
+6 < 404
+6 < Date: Mon, 12 May 2025 04:59:18 GMT
+6 < Content-Length: 0
+6 < Connection: keep-alive
+6 < Access-Control-Allow-Origin: *
+6 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+6 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+6 < Server: Jetty(9.2.9.v20150224)
+
+
+23:59:18.527 [main] ERROR com.intuit.karate - classpath:examples/users/user-crud-sequential.feature:63
+* status 200
+status code was: 404, expected: 200, response time in milliseconds: 266, url: https://petstore.swagger.io/v2/user/user_b021b10f-59ce-4e0e-85af-c9f655d16552, response: 
+
+classpath:examples/users/user-crud-sequential.feature:63
+---------------------------------------------------------
+feature: classpath:examples/users/user-crud-sequential.feature
+scenarios:  1 | passed:  0 | failed:  1 | time: 2,2881
+---------------------------------------------------------
+
+Karate version: 1.4.1
+======================================================
+elapsed:   3,67 | threads:    1 | thread time: 2,29 
+features:     1 | skipped:    0 | efficiency: 0,62
+scenarios:    1 | passed:     0 | failed: 1
+======================================================
+>>> failed features:
+status code was: 404, expected: 200, response time in milliseconds: 266, url: https://petstore.swagger.io/v2/user/user_b021b10f-59ce-4e0e-85af-c9f655d16552, response: 
+
+classpath:examples/users/user-crud-sequential.feature:63
+<<<
+
+HTML report: (paste into browser to view) | Karate version: 1.4.1
+file:///C:/Users/andyn/OneDrive/Documents/Proyecto_QA/petstore-api-test/target/karate-reports/karate-summary.html
+===================================================================
+
+]]></system-out>
+  </testcase>
+  <testcase name="[1:24] 0 - Validar API activa" classname="examples/users/user-crud" time="0.283">
+    <system-out><![CDATA[23:59:19.012 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:59:19.031 [main] DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/v2/store/inventory
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:59:19.299 [main] DEBUG com.intuit.karate - response time in milliseconds: 267
+1 < 200
+1 < Date: Mon, 12 May 2025 04:59:19 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{
+  "sold": 5,
+  "EVOMASTER": 1,
+  "string": 355,
+  "pending": 4,
+  "available": 29,
+  "not available": 1,
+  "invalid": 6
+}
+
+
+23:59:19.302 [main] INFO  com.intuit.karate - [print] API está activa 
+]]></system-out>
+  </testcase>
+  <testcase name="[2:33] 1 - Crear un nuevo usuario" classname="examples/users/user-crud" time="0.289">
+    <system-out><![CDATA[23:59:19.322 [main] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/user
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 198
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+1 > Accept-Encoding: gzip,deflate
+{
+  "id": 123456789,
+  "username": "user_1478aded-fd4b-47f7-8f08-7f7bf3ba2dc7",
+  "firstName": "Andy",
+  "lastName": "Lema",
+  "email": "andy.lema@test.com",
+  "password": "Password123",
+  "phone": "0987654321",
+  "userStatus": 1
+}
+
+
+23:59:19.589 [main] DEBUG com.intuit.karate - response time in milliseconds: 266
+1 < 200
+1 < Date: Mon, 12 May 2025 04:59:19 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{
+  "code": 200,
+  "type": "unknown",
+  "message": "123456789"
+}
+
+
+23:59:19.590 [main] INFO  com.intuit.karate - [print] Usuario creado: user_1478aded-fd4b-47f7-8f08-7f7bf3ba2dc7 
+]]></system-out>
+  </testcase>
+  <testcase name="[3:44] 2 - Buscar el usuario creado" classname="examples/users/user-crud" time="62.733">
+    <failure message="too many retry attempts: 20&#10;classpath:examples/users/user-crud.feature:49" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+too many retry attempts: 20
+classpath:examples/users/user-crud.feature:49
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:135)
+	at com.intuit.karate.junit5.FeatureNode.lambda$next$1(FeatureNode.java:86)
+	at org.junit.jupiter.engine.descriptor.DynamicTestTestDescriptor.lambda$execute$0(DynamicTestTestDescriptor.java:53)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.api.extension.InvocationInterceptor.interceptDynamicTest(InvocationInterceptor.java:167)
+	at org.junit.jupiter.api.extension.InvocationInterceptor.interceptDynamicTest(InvocationInterceptor.java:184)
+	at org.junit.jupiter.engine.descriptor.DynamicTestTestDescriptor.lambda$execute$1(DynamicTestTestDescriptor.java:61)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptorCall.lambda$ofVoid$0(InvocationInterceptorChain.java:78)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.descriptor.DynamicTestTestDescriptor.execute(DynamicTestTestDescriptor.java:60)
+	at org.junit.jupiter.engine.descriptor.DynamicTestTestDescriptor.execute(DynamicTestTestDescriptor.java:32)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor.execute(NodeTestTask.java:226)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor.execute(NodeTestTask.java:204)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEachOrdered(ReferencePipeline.java:502)
+	at org.junit.jupiter.engine.descriptor.DynamicContainerTestDescriptor.execute(DynamicContainerTestDescriptor.java:67)
+	at org.junit.jupiter.engine.descriptor.DynamicContainerTestDescriptor.execute(DynamicContainerTestDescriptor.java:33)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor.execute(NodeTestTask.java:226)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor.execute(NodeTestTask.java:204)
+	at java.base/java.util.Optional.ifPresent(Optional.java:183)
+	at org.junit.jupiter.engine.descriptor.TestFactoryTestDescriptor.lambda$invokeTestMethod$1(TestFactoryTestDescriptor.java:108)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestFactoryTestDescriptor.invokeTestMethod(TestFactoryTestDescriptor.java:95)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:50)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[23:59:19.606 [main] DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/v2/user/user_ea890b64-ab0e-45ac-8da5-fc283749c3f1
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+1 > Accept-Encoding: gzip,deflate
+
+
+23:59:19.871 [main] DEBUG com.intuit.karate - response time in milliseconds: 265
+1 < 404
+1 < Date: Mon, 12 May 2025 04:59:20 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{
+  "code": 1,
+  "type": "error",
+  "message": "User not found"
+}
+
+
+23:59:19.873 [main] DEBUG com.intuit.karate - retry condition not satisfied: responseStatus == 200
+23:59:19.873 [main] DEBUG com.intuit.karate - sleeping before retry #1
+23:59:22.888 [main] DEBUG com.intuit.karate - request:
+2 > GET https://petstore.swagger.io/v2/user/user_ea890b64-ab0e-45ac-8da5-fc283749c3f1
+2 > Host: petstore.swagger.io
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+2 > Accept-Encoding: gzip,deflate
+
+
+23:59:23.185 [main] DEBUG com.intuit.karate - response time in milliseconds: 295
+2 < 404
+2 < Date: Mon, 12 May 2025 04:59:23 GMT
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < Access-Control-Allow-Origin: *
+2 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+2 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+2 < Server: Jetty(9.2.9.v20150224)
+{
+  "code": 1,
+  "type": "error",
+  "message": "User not found"
+}
+
+
+23:59:23.186 [main] DEBUG com.intuit.karate - retry condition not satisfied: responseStatus == 200
+23:59:23.186 [main] DEBUG com.intuit.karate - sleeping before retry #2
+23:59:26.197 [main] DEBUG com.intuit.karate - request:
+3 > GET https://petstore.swagger.io/v2/user/user_ea890b64-ab0e-45ac-8da5-fc283749c3f1
+3 > Host: petstore.swagger.io
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+3 > Accept-Encoding: gzip,deflate
+
+
+23:59:26.463 [main] DEBUG com.intuit.karate - response time in milliseconds: 266
+3 < 404
+3 < Date: Mon, 12 May 2025 04:59:26 GMT
+3 < Content-Type: application/json
+3 < Transfer-Encoding: chunked
+3 < Connection: keep-alive
+3 < Access-Control-Allow-Origin: *
+3 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+3 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+3 < Server: Jetty(9.2.9.v20150224)
+{
+  "code": 1,
+  "type": "error",
+  "message": "User not found"
+}
+
+
+23:59:26.464 [main] DEBUG com.intuit.karate - retry condition not satisfied: responseStatus == 200
+23:59:26.464 [main] DEBUG com.intuit.karate - sleeping before retry #3
+23:59:29.472 [main] DEBUG com.intuit.karate - request:
+4 > GET https://petstore.swagger.io/v2/user/user_ea890b64-ab0e-45ac-8da5-fc283749c3f1
+4 > Host: petstore.swagger.io
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+4 > Accept-Encoding: gzip,deflate
+
+
+23:59:29.742 [main] DEBUG com.intuit.karate - response time in milliseconds: 269
+4 < 404
+4 < Date: Mon, 12 May 2025 04:59:30 GMT
+4 < Content-Type: application/json
+4 < Transfer-Encoding: chunked
+4 < Connection: keep-alive
+4 < Access-Control-Allow-Origin: *
+4 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+4 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+4 < Server: Jetty(9.2.9.v20150224)
+{
+  "code": 1,
+  "type": "error",
+  "message": "User not found"
+}
+
+
+23:59:29.742 [main] DEBUG com.intuit.karate - retry condition not satisfied: responseStatus == 200
+23:59:29.742 [main] DEBUG com.intuit.karate - sleeping before retry #4
+23:59:32.759 [main] DEBUG com.intuit.karate - request:
+5 > GET https://petstore.swagger.io/v2/user/user_ea890b64-ab0e-45ac-8da5-fc283749c3f1
+5 > Host: petstore.swagger.io
+5 > Connection: Keep-Alive
+5 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+5 > Accept-Encoding: gzip,deflate
+
+
+23:59:33.025 [main] DEBUG com.intuit.karate - response time in milliseconds: 265
+5 < 404
+5 < Date: Mon, 12 May 2025 04:59:33 GMT
+5 < Content-Type: application/json
+5 < Transfer-Encoding: chunked
+5 < Connection: keep-alive
+5 < Access-Control-Allow-Origin: *
+5 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+5 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+5 < Server: Jetty(9.2.9.v20150224)
+{
+  "code": 1,
+  "type": "error",
+  "message": "User not found"
+}
+
+
+23:59:33.026 [main] DEBUG com.intuit.karate - retry condition not satisfied: responseStatus == 200
+23:59:33.026 [main] DEBUG com.intuit.karate - sleeping before retry #5
+23:59:36.028 [main] DEBUG com.intuit.karate - request:
+6 > GET https://petstore.swagger.io/v2/user/user_ea890b64-ab0e-45ac-8da5-fc283749c3f1
+6 > Host: petstore.swagger.io
+6 > Connection: Keep-Alive
+6 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+6 > Accept-Encoding: gzip,deflate
+
+
+23:59:36.295 [main] DEBUG com.intuit.karate - response time in milliseconds: 265
+6 < 404
+6 < Date: Mon, 12 May 2025 04:59:36 GMT
+6 < Content-Type: application/json
+6 < Transfer-Encoding: chunked
+6 < Connection: keep-alive
+6 < Access-Control-Allow-Origin: *
+6 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+6 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+6 < Server: Jetty(9.2.9.v20150224)
+{
+  "code": 1,
+  "type": "error",
+  "message": "User not found"
+}
+
+
+23:59:36.296 [main] DEBUG com.intuit.karate - retry condition not satisfied: responseStatus == 200
+23:59:36.296 [main] DEBUG com.intuit.karate - sleeping before retry #6
+23:59:39.304 [main] DEBUG com.intuit.karate - request:
+7 > GET https://petstore.swagger.io/v2/user/user_ea890b64-ab0e-45ac-8da5-fc283749c3f1
+7 > Host: petstore.swagger.io
+7 > Connection: Keep-Alive
+7 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+7 > Accept-Encoding: gzip,deflate
+
+
+23:59:39.574 [main] DEBUG com.intuit.karate - response time in milliseconds: 269
+7 < 404
+7 < Date: Mon, 12 May 2025 04:59:39 GMT
+7 < Content-Type: application/json
+7 < Transfer-Encoding: chunked
+7 < Connection: keep-alive
+7 < Access-Control-Allow-Origin: *
+7 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+7 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+7 < Server: Jetty(9.2.9.v20150224)
+{
+  "code": 1,
+  "type": "error",
+  "message": "User not found"
+}
+
+
+23:59:39.575 [main] DEBUG com.intuit.karate - retry condition not satisfied: responseStatus == 200
+23:59:39.575 [main] DEBUG com.intuit.karate - sleeping before retry #7
+23:59:42.581 [main] DEBUG com.intuit.karate - request:
+8 > GET https://petstore.swagger.io/v2/user/user_ea890b64-ab0e-45ac-8da5-fc283749c3f1
+8 > Host: petstore.swagger.io
+8 > Connection: Keep-Alive
+8 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+8 > Accept-Encoding: gzip,deflate
+
+
+23:59:42.849 [main] DEBUG com.intuit.karate - response time in milliseconds: 267
+8 < 404
+8 < Date: Mon, 12 May 2025 04:59:43 GMT
+8 < Content-Type: application/json
+8 < Transfer-Encoding: chunked
+8 < Connection: keep-alive
+8 < Access-Control-Allow-Origin: *
+8 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+8 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+8 < Server: Jetty(9.2.9.v20150224)
+{
+  "code": 1,
+  "type": "error",
+  "message": "User not found"
+}
+
+
+23:59:42.850 [main] DEBUG com.intuit.karate - retry condition not satisfied: responseStatus == 200
+23:59:42.850 [main] DEBUG com.intuit.karate - sleeping before retry #8
+23:59:45.865 [main] DEBUG com.intuit.karate - request:
+9 > GET https://petstore.swagger.io/v2/user/user_ea890b64-ab0e-45ac-8da5-fc283749c3f1
+9 > Host: petstore.swagger.io
+9 > Connection: Keep-Alive
+9 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+9 > Accept-Encoding: gzip,deflate
+
+
+23:59:46.132 [main] DEBUG com.intuit.karate - response time in milliseconds: 267
+9 < 404
+9 < Date: Mon, 12 May 2025 04:59:46 GMT
+9 < Content-Type: application/json
+9 < Transfer-Encoding: chunked
+9 < Connection: keep-alive
+9 < Access-Control-Allow-Origin: *
+9 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+9 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+9 < Server: Jetty(9.2.9.v20150224)
+{
+  "code": 1,
+  "type": "error",
+  "message": "User not found"
+}
+
+
+23:59:46.133 [main] DEBUG com.intuit.karate - retry condition not satisfied: responseStatus == 200
+23:59:46.133 [main] DEBUG com.intuit.karate - sleeping before retry #9
+23:59:49.149 [main] DEBUG com.intuit.karate - request:
+10 > GET https://petstore.swagger.io/v2/user/user_ea890b64-ab0e-45ac-8da5-fc283749c3f1
+10 > Host: petstore.swagger.io
+10 > Connection: Keep-Alive
+10 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+10 > Accept-Encoding: gzip,deflate
+
+
+23:59:49.419 [main] DEBUG com.intuit.karate - response time in milliseconds: 269
+10 < 404
+10 < Date: Mon, 12 May 2025 04:59:49 GMT
+10 < Content-Type: application/json
+10 < Transfer-Encoding: chunked
+10 < Connection: keep-alive
+10 < Access-Control-Allow-Origin: *
+10 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+10 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+10 < Server: Jetty(9.2.9.v20150224)
+{
+  "code": 1,
+  "type": "error",
+  "message": "User not found"
+}
+
+
+23:59:49.420 [main] DEBUG com.intuit.karate - retry condition not satisfied: responseStatus == 200
+23:59:49.420 [main] DEBUG com.intuit.karate - sleeping before retry #10
+23:59:52.438 [main] DEBUG com.intuit.karate - request:
+11 > GET https://petstore.swagger.io/v2/user/user_ea890b64-ab0e-45ac-8da5-fc283749c3f1
+11 > Host: petstore.swagger.io
+11 > Connection: Keep-Alive
+11 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+11 > Accept-Encoding: gzip,deflate
+
+
+23:59:52.707 [main] DEBUG com.intuit.karate - response time in milliseconds: 268
+11 < 404
+11 < Date: Mon, 12 May 2025 04:59:53 GMT
+11 < Content-Type: application/json
+11 < Transfer-Encoding: chunked
+11 < Connection: keep-alive
+11 < Access-Control-Allow-Origin: *
+11 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+11 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+11 < Server: Jetty(9.2.9.v20150224)
+{
+  "code": 1,
+  "type": "error",
+  "message": "User not found"
+}
+
+
+23:59:52.707 [main] DEBUG com.intuit.karate - retry condition not satisfied: responseStatus == 200
+23:59:52.708 [main] DEBUG com.intuit.karate - sleeping before retry #11
+23:59:55.723 [main] DEBUG com.intuit.karate - request:
+12 > GET https://petstore.swagger.io/v2/user/user_ea890b64-ab0e-45ac-8da5-fc283749c3f1
+12 > Host: petstore.swagger.io
+12 > Connection: Keep-Alive
+12 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+12 > Accept-Encoding: gzip,deflate
+
+
+23:59:55.991 [main] DEBUG com.intuit.karate - response time in milliseconds: 267
+12 < 404
+12 < Date: Mon, 12 May 2025 04:59:56 GMT
+12 < Content-Type: application/json
+12 < Transfer-Encoding: chunked
+12 < Connection: keep-alive
+12 < Access-Control-Allow-Origin: *
+12 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+12 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+12 < Server: Jetty(9.2.9.v20150224)
+{
+  "code": 1,
+  "type": "error",
+  "message": "User not found"
+}
+
+
+23:59:55.992 [main] DEBUG com.intuit.karate - retry condition not satisfied: responseStatus == 200
+23:59:55.992 [main] DEBUG com.intuit.karate - sleeping before retry #12
+23:59:58.996 [main] DEBUG com.intuit.karate - request:
+13 > GET https://petstore.swagger.io/v2/user/user_ea890b64-ab0e-45ac-8da5-fc283749c3f1
+13 > Host: petstore.swagger.io
+13 > Connection: Keep-Alive
+13 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+13 > Accept-Encoding: gzip,deflate
+
+
+23:59:59.265 [main] DEBUG com.intuit.karate - response time in milliseconds: 269
+13 < 404
+13 < Date: Mon, 12 May 2025 04:59:59 GMT
+13 < Content-Type: application/json
+13 < Transfer-Encoding: chunked
+13 < Connection: keep-alive
+13 < Access-Control-Allow-Origin: *
+13 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+13 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+13 < Server: Jetty(9.2.9.v20150224)
+{
+  "code": 1,
+  "type": "error",
+  "message": "User not found"
+}
+
+
+23:59:59.266 [main] DEBUG com.intuit.karate - retry condition not satisfied: responseStatus == 200
+23:59:59.266 [main] DEBUG com.intuit.karate - sleeping before retry #13
+00:00:02.273 [main] DEBUG com.intuit.karate - request:
+14 > GET https://petstore.swagger.io/v2/user/user_ea890b64-ab0e-45ac-8da5-fc283749c3f1
+14 > Host: petstore.swagger.io
+14 > Connection: Keep-Alive
+14 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+14 > Accept-Encoding: gzip,deflate
+
+
+00:00:02.537 [main] DEBUG com.intuit.karate - response time in milliseconds: 263
+14 < 404
+14 < Date: Mon, 12 May 2025 05:00:02 GMT
+14 < Content-Type: application/json
+14 < Transfer-Encoding: chunked
+14 < Connection: keep-alive
+14 < Access-Control-Allow-Origin: *
+14 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+14 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+14 < Server: Jetty(9.2.9.v20150224)
+{
+  "code": 1,
+  "type": "error",
+  "message": "User not found"
+}
+
+
+00:00:02.538 [main] DEBUG com.intuit.karate - retry condition not satisfied: responseStatus == 200
+00:00:02.539 [main] DEBUG com.intuit.karate - sleeping before retry #14
+00:00:05.543 [main] DEBUG com.intuit.karate - request:
+15 > GET https://petstore.swagger.io/v2/user/user_ea890b64-ab0e-45ac-8da5-fc283749c3f1
+15 > Host: petstore.swagger.io
+15 > Connection: Keep-Alive
+15 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+15 > Accept-Encoding: gzip,deflate
+
+
+00:00:05.817 [main] DEBUG com.intuit.karate - response time in milliseconds: 272
+15 < 404
+15 < Date: Mon, 12 May 2025 05:00:06 GMT
+15 < Content-Type: application/json
+15 < Transfer-Encoding: chunked
+15 < Connection: keep-alive
+15 < Access-Control-Allow-Origin: *
+15 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+15 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+15 < Server: Jetty(9.2.9.v20150224)
+{
+  "code": 1,
+  "type": "error",
+  "message": "User not found"
+}
+
+
+00:00:05.817 [main] DEBUG com.intuit.karate - retry condition not satisfied: responseStatus == 200
+00:00:05.818 [main] DEBUG com.intuit.karate - sleeping before retry #15
+00:00:08.831 [main] DEBUG com.intuit.karate - request:
+16 > GET https://petstore.swagger.io/v2/user/user_ea890b64-ab0e-45ac-8da5-fc283749c3f1
+16 > Host: petstore.swagger.io
+16 > Connection: Keep-Alive
+16 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+16 > Accept-Encoding: gzip,deflate
+
+
+00:00:09.096 [main] DEBUG com.intuit.karate - response time in milliseconds: 265
+16 < 404
+16 < Date: Mon, 12 May 2025 05:00:09 GMT
+16 < Content-Type: application/json
+16 < Transfer-Encoding: chunked
+16 < Connection: keep-alive
+16 < Access-Control-Allow-Origin: *
+16 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+16 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+16 < Server: Jetty(9.2.9.v20150224)
+{
+  "code": 1,
+  "type": "error",
+  "message": "User not found"
+}
+
+
+00:00:09.098 [main] DEBUG com.intuit.karate - retry condition not satisfied: responseStatus == 200
+00:00:09.098 [main] DEBUG com.intuit.karate - sleeping before retry #16
+00:00:12.103 [main] DEBUG com.intuit.karate - request:
+17 > GET https://petstore.swagger.io/v2/user/user_ea890b64-ab0e-45ac-8da5-fc283749c3f1
+17 > Host: petstore.swagger.io
+17 > Connection: Keep-Alive
+17 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+17 > Accept-Encoding: gzip,deflate
+
+
+00:00:12.369 [main] DEBUG com.intuit.karate - response time in milliseconds: 266
+17 < 404
+17 < Date: Mon, 12 May 2025 05:00:12 GMT
+17 < Content-Type: application/json
+17 < Transfer-Encoding: chunked
+17 < Connection: keep-alive
+17 < Access-Control-Allow-Origin: *
+17 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+17 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+17 < Server: Jetty(9.2.9.v20150224)
+{
+  "code": 1,
+  "type": "error",
+  "message": "User not found"
+}
+
+
+00:00:12.369 [main] DEBUG com.intuit.karate - retry condition not satisfied: responseStatus == 200
+00:00:12.370 [main] DEBUG com.intuit.karate - sleeping before retry #17
+00:00:15.385 [main] DEBUG com.intuit.karate - request:
+18 > GET https://petstore.swagger.io/v2/user/user_ea890b64-ab0e-45ac-8da5-fc283749c3f1
+18 > Host: petstore.swagger.io
+18 > Connection: Keep-Alive
+18 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+18 > Accept-Encoding: gzip,deflate
+
+
+00:00:15.652 [main] DEBUG com.intuit.karate - response time in milliseconds: 266
+18 < 404
+18 < Date: Mon, 12 May 2025 05:00:15 GMT
+18 < Content-Type: application/json
+18 < Transfer-Encoding: chunked
+18 < Connection: keep-alive
+18 < Access-Control-Allow-Origin: *
+18 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+18 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+18 < Server: Jetty(9.2.9.v20150224)
+{
+  "code": 1,
+  "type": "error",
+  "message": "User not found"
+}
+
+
+00:00:15.652 [main] DEBUG com.intuit.karate - retry condition not satisfied: responseStatus == 200
+00:00:15.653 [main] DEBUG com.intuit.karate - sleeping before retry #18
+00:00:18.670 [main] DEBUG com.intuit.karate - request:
+19 > GET https://petstore.swagger.io/v2/user/user_ea890b64-ab0e-45ac-8da5-fc283749c3f1
+19 > Host: petstore.swagger.io
+19 > Connection: Keep-Alive
+19 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+19 > Accept-Encoding: gzip,deflate
+
+
+00:00:18.938 [main] DEBUG com.intuit.karate - response time in milliseconds: 268
+19 < 404
+19 < Date: Mon, 12 May 2025 05:00:19 GMT
+19 < Content-Type: application/json
+19 < Transfer-Encoding: chunked
+19 < Connection: keep-alive
+19 < Access-Control-Allow-Origin: *
+19 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+19 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+19 < Server: Jetty(9.2.9.v20150224)
+{
+  "code": 1,
+  "type": "error",
+  "message": "User not found"
+}
+
+
+00:00:18.939 [main] DEBUG com.intuit.karate - retry condition not satisfied: responseStatus == 200
+00:00:18.939 [main] DEBUG com.intuit.karate - sleeping before retry #19
+00:00:21.947 [main] DEBUG com.intuit.karate - request:
+20 > GET https://petstore.swagger.io/v2/user/user_ea890b64-ab0e-45ac-8da5-fc283749c3f1
+20 > Host: petstore.swagger.io
+20 > Connection: Keep-Alive
+20 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+20 > Accept-Encoding: gzip,deflate
+
+
+00:00:22.325 [main] DEBUG com.intuit.karate - response time in milliseconds: 377
+20 < 404
+20 < Date: Mon, 12 May 2025 05:00:22 GMT
+20 < Content-Type: application/json
+20 < Transfer-Encoding: chunked
+20 < Connection: keep-alive
+20 < Access-Control-Allow-Origin: *
+20 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+20 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+20 < Server: Jetty(9.2.9.v20150224)
+{
+  "code": 1,
+  "type": "error",
+  "message": "User not found"
+}
+
+
+00:00:22.326 [main] DEBUG com.intuit.karate - retry condition not satisfied: responseStatus == 200
+00:00:22.327 [main] ERROR com.intuit.karate - classpath:examples/users/user-crud.feature:49
+* method get
+too many retry attempts: 20
+classpath:examples/users/user-crud.feature:49
+]]></system-out>
+  </testcase>
+  <testcase name="[4:55] 3 - Actualizar el nombre y correo del usuario" classname="examples/users/user-crud" time="0.282">
+    <system-out><![CDATA[00:00:22.344 [main] DEBUG com.intuit.karate - request:
+1 > PUT https://petstore.swagger.io/v2/user/user_beaab121-d5c5-43c1-a268-de9024aad781
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 218
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+1 > Accept-Encoding: gzip,deflate
+{
+  "id": 123456789,
+  "username": "user_beaab121-d5c5-43c1-a268-de9024aad781",
+  "firstName": "AndyUpdated",
+  "lastName": "LemaUpdated",
+  "email": "andy.updated@test.com",
+  "password": "NewPassword123",
+  "phone": "0999999999",
+  "userStatus": 1
+}
+
+
+00:00:22.609 [main] DEBUG com.intuit.karate - response time in milliseconds: 264
+1 < 200
+1 < Date: Mon, 12 May 2025 05:00:22 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{
+  "code": 200,
+  "type": "unknown",
+  "message": "123456789"
+}
+
+
+]]></system-out>
+  </testcase>
+  <testcase name="[5:65] 4 - Verificar los datos del usuario actualizado" classname="examples/users/user-crud" time="62.535">
+    <failure message="too many retry attempts: 20&#10;classpath:examples/users/user-crud.feature:70" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+too many retry attempts: 20
+classpath:examples/users/user-crud.feature:70
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:135)
+	at com.intuit.karate.junit5.FeatureNode.lambda$next$1(FeatureNode.java:86)
+	at org.junit.jupiter.engine.descriptor.DynamicTestTestDescriptor.lambda$execute$0(DynamicTestTestDescriptor.java:53)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.api.extension.InvocationInterceptor.interceptDynamicTest(InvocationInterceptor.java:167)
+	at org.junit.jupiter.api.extension.InvocationInterceptor.interceptDynamicTest(InvocationInterceptor.java:184)
+	at org.junit.jupiter.engine.descriptor.DynamicTestTestDescriptor.lambda$execute$1(DynamicTestTestDescriptor.java:61)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptorCall.lambda$ofVoid$0(InvocationInterceptorChain.java:78)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.descriptor.DynamicTestTestDescriptor.execute(DynamicTestTestDescriptor.java:60)
+	at org.junit.jupiter.engine.descriptor.DynamicTestTestDescriptor.execute(DynamicTestTestDescriptor.java:32)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor.execute(NodeTestTask.java:226)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor.execute(NodeTestTask.java:204)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEachOrdered(ReferencePipeline.java:502)
+	at org.junit.jupiter.engine.descriptor.DynamicContainerTestDescriptor.execute(DynamicContainerTestDescriptor.java:67)
+	at org.junit.jupiter.engine.descriptor.DynamicContainerTestDescriptor.execute(DynamicContainerTestDescriptor.java:33)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor.execute(NodeTestTask.java:226)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor.execute(NodeTestTask.java:204)
+	at java.base/java.util.Optional.ifPresent(Optional.java:183)
+	at org.junit.jupiter.engine.descriptor.TestFactoryTestDescriptor.lambda$invokeTestMethod$1(TestFactoryTestDescriptor.java:108)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestFactoryTestDescriptor.invokeTestMethod(TestFactoryTestDescriptor.java:95)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:50)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[00:00:22.625 [main] DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/v2/user/user_c781c09a-3e6d-4a9b-93b8-edc58e63e24b
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:00:22.890 [main] DEBUG com.intuit.karate - response time in milliseconds: 265
+1 < 404
+1 < Date: Mon, 12 May 2025 05:00:23 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{
+  "code": 1,
+  "type": "error",
+  "message": "User not found"
+}
+
+
+00:00:22.892 [main] DEBUG com.intuit.karate - retry condition not satisfied: responseStatus == 200
+00:00:22.892 [main] DEBUG com.intuit.karate - sleeping before retry #1
+00:00:25.895 [main] DEBUG com.intuit.karate - request:
+2 > GET https://petstore.swagger.io/v2/user/user_c781c09a-3e6d-4a9b-93b8-edc58e63e24b
+2 > Host: petstore.swagger.io
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+2 > Accept-Encoding: gzip,deflate
+
+
+00:00:26.156 [main] DEBUG com.intuit.karate - response time in milliseconds: 261
+2 < 404
+2 < Date: Mon, 12 May 2025 05:00:26 GMT
+2 < Content-Type: application/json
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < Access-Control-Allow-Origin: *
+2 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+2 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+2 < Server: Jetty(9.2.9.v20150224)
+{
+  "code": 1,
+  "type": "error",
+  "message": "User not found"
+}
+
+
+00:00:26.158 [main] DEBUG com.intuit.karate - retry condition not satisfied: responseStatus == 200
+00:00:26.158 [main] DEBUG com.intuit.karate - sleeping before retry #2
+00:00:29.162 [main] DEBUG com.intuit.karate - request:
+3 > GET https://petstore.swagger.io/v2/user/user_c781c09a-3e6d-4a9b-93b8-edc58e63e24b
+3 > Host: petstore.swagger.io
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+3 > Accept-Encoding: gzip,deflate
+
+
+00:00:29.432 [main] DEBUG com.intuit.karate - response time in milliseconds: 268
+3 < 404
+3 < Date: Mon, 12 May 2025 05:00:29 GMT
+3 < Content-Type: application/json
+3 < Transfer-Encoding: chunked
+3 < Connection: keep-alive
+3 < Access-Control-Allow-Origin: *
+3 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+3 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+3 < Server: Jetty(9.2.9.v20150224)
+{
+  "code": 1,
+  "type": "error",
+  "message": "User not found"
+}
+
+
+00:00:29.433 [main] DEBUG com.intuit.karate - retry condition not satisfied: responseStatus == 200
+00:00:29.433 [main] DEBUG com.intuit.karate - sleeping before retry #3
+00:00:32.438 [main] DEBUG com.intuit.karate - request:
+4 > GET https://petstore.swagger.io/v2/user/user_c781c09a-3e6d-4a9b-93b8-edc58e63e24b
+4 > Host: petstore.swagger.io
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+4 > Accept-Encoding: gzip,deflate
+
+
+00:00:32.708 [main] DEBUG com.intuit.karate - response time in milliseconds: 269
+4 < 404
+4 < Date: Mon, 12 May 2025 05:00:33 GMT
+4 < Content-Type: application/json
+4 < Transfer-Encoding: chunked
+4 < Connection: keep-alive
+4 < Access-Control-Allow-Origin: *
+4 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+4 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+4 < Server: Jetty(9.2.9.v20150224)
+{
+  "code": 1,
+  "type": "error",
+  "message": "User not found"
+}
+
+
+00:00:32.708 [main] DEBUG com.intuit.karate - retry condition not satisfied: responseStatus == 200
+00:00:32.708 [main] DEBUG com.intuit.karate - sleeping before retry #4
+00:00:35.711 [main] DEBUG com.intuit.karate - request:
+5 > GET https://petstore.swagger.io/v2/user/user_c781c09a-3e6d-4a9b-93b8-edc58e63e24b
+5 > Host: petstore.swagger.io
+5 > Connection: Keep-Alive
+5 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+5 > Accept-Encoding: gzip,deflate
+
+
+00:00:35.976 [main] DEBUG com.intuit.karate - response time in milliseconds: 265
+5 < 404
+5 < Date: Mon, 12 May 2025 05:00:36 GMT
+5 < Content-Type: application/json
+5 < Transfer-Encoding: chunked
+5 < Connection: keep-alive
+5 < Access-Control-Allow-Origin: *
+5 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+5 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+5 < Server: Jetty(9.2.9.v20150224)
+{
+  "code": 1,
+  "type": "error",
+  "message": "User not found"
+}
+
+
+00:00:35.977 [main] DEBUG com.intuit.karate - retry condition not satisfied: responseStatus == 200
+00:00:35.977 [main] DEBUG com.intuit.karate - sleeping before retry #5
+00:00:38.980 [main] DEBUG com.intuit.karate - request:
+6 > GET https://petstore.swagger.io/v2/user/user_c781c09a-3e6d-4a9b-93b8-edc58e63e24b
+6 > Host: petstore.swagger.io
+6 > Connection: Keep-Alive
+6 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+6 > Accept-Encoding: gzip,deflate
+
+
+00:00:39.246 [main] DEBUG com.intuit.karate - response time in milliseconds: 266
+6 < 404
+6 < Date: Mon, 12 May 2025 05:00:39 GMT
+6 < Content-Type: application/json
+6 < Transfer-Encoding: chunked
+6 < Connection: keep-alive
+6 < Access-Control-Allow-Origin: *
+6 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+6 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+6 < Server: Jetty(9.2.9.v20150224)
+{
+  "code": 1,
+  "type": "error",
+  "message": "User not found"
+}
+
+
+00:00:39.250 [main] DEBUG com.intuit.karate - retry condition not satisfied: responseStatus == 200
+00:00:39.250 [main] DEBUG com.intuit.karate - sleeping before retry #6
+00:00:42.255 [main] DEBUG com.intuit.karate - request:
+7 > GET https://petstore.swagger.io/v2/user/user_c781c09a-3e6d-4a9b-93b8-edc58e63e24b
+7 > Host: petstore.swagger.io
+7 > Connection: Keep-Alive
+7 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+7 > Accept-Encoding: gzip,deflate
+
+
+00:00:42.523 [main] DEBUG com.intuit.karate - response time in milliseconds: 266
+7 < 404
+7 < Date: Mon, 12 May 2025 05:00:42 GMT
+7 < Content-Type: application/json
+7 < Transfer-Encoding: chunked
+7 < Connection: keep-alive
+7 < Access-Control-Allow-Origin: *
+7 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+7 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+7 < Server: Jetty(9.2.9.v20150224)
+{
+  "code": 1,
+  "type": "error",
+  "message": "User not found"
+}
+
+
+00:00:42.523 [main] DEBUG com.intuit.karate - retry condition not satisfied: responseStatus == 200
+00:00:42.523 [main] DEBUG com.intuit.karate - sleeping before retry #7
+00:00:45.524 [main] DEBUG com.intuit.karate - request:
+8 > GET https://petstore.swagger.io/v2/user/user_c781c09a-3e6d-4a9b-93b8-edc58e63e24b
+8 > Host: petstore.swagger.io
+8 > Connection: Keep-Alive
+8 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+8 > Accept-Encoding: gzip,deflate
+
+
+00:00:45.789 [main] DEBUG com.intuit.karate - response time in milliseconds: 265
+8 < 404
+8 < Date: Mon, 12 May 2025 05:00:46 GMT
+8 < Content-Type: application/json
+8 < Transfer-Encoding: chunked
+8 < Connection: keep-alive
+8 < Access-Control-Allow-Origin: *
+8 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+8 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+8 < Server: Jetty(9.2.9.v20150224)
+{
+  "code": 1,
+  "type": "error",
+  "message": "User not found"
+}
+
+
+00:00:45.790 [main] DEBUG com.intuit.karate - retry condition not satisfied: responseStatus == 200
+00:00:45.790 [main] DEBUG com.intuit.karate - sleeping before retry #8
+00:00:48.806 [main] DEBUG com.intuit.karate - request:
+9 > GET https://petstore.swagger.io/v2/user/user_c781c09a-3e6d-4a9b-93b8-edc58e63e24b
+9 > Host: petstore.swagger.io
+9 > Connection: Keep-Alive
+9 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+9 > Accept-Encoding: gzip,deflate
+
+
+00:00:49.071 [main] DEBUG com.intuit.karate - response time in milliseconds: 263
+9 < 404
+9 < Date: Mon, 12 May 2025 05:00:49 GMT
+9 < Content-Type: application/json
+9 < Transfer-Encoding: chunked
+9 < Connection: keep-alive
+9 < Access-Control-Allow-Origin: *
+9 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+9 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+9 < Server: Jetty(9.2.9.v20150224)
+{
+  "code": 1,
+  "type": "error",
+  "message": "User not found"
+}
+
+
+00:00:49.072 [main] DEBUG com.intuit.karate - retry condition not satisfied: responseStatus == 200
+00:00:49.072 [main] DEBUG com.intuit.karate - sleeping before retry #9
+00:00:52.075 [main] DEBUG com.intuit.karate - request:
+10 > GET https://petstore.swagger.io/v2/user/user_c781c09a-3e6d-4a9b-93b8-edc58e63e24b
+10 > Host: petstore.swagger.io
+10 > Connection: Keep-Alive
+10 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+10 > Accept-Encoding: gzip,deflate
+
+
+00:00:52.345 [main] DEBUG com.intuit.karate - response time in milliseconds: 269
+10 < 404
+10 < Date: Mon, 12 May 2025 05:00:52 GMT
+10 < Content-Type: application/json
+10 < Transfer-Encoding: chunked
+10 < Connection: keep-alive
+10 < Access-Control-Allow-Origin: *
+10 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+10 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+10 < Server: Jetty(9.2.9.v20150224)
+{
+  "code": 1,
+  "type": "error",
+  "message": "User not found"
+}
+
+
+00:00:52.346 [main] DEBUG com.intuit.karate - retry condition not satisfied: responseStatus == 200
+00:00:52.346 [main] DEBUG com.intuit.karate - sleeping before retry #10
+00:00:55.352 [main] DEBUG com.intuit.karate - request:
+11 > GET https://petstore.swagger.io/v2/user/user_c781c09a-3e6d-4a9b-93b8-edc58e63e24b
+11 > Host: petstore.swagger.io
+11 > Connection: Keep-Alive
+11 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+11 > Accept-Encoding: gzip,deflate
+
+
+00:00:55.617 [main] DEBUG com.intuit.karate - response time in milliseconds: 265
+11 < 404
+11 < Date: Mon, 12 May 2025 05:00:55 GMT
+11 < Content-Type: application/json
+11 < Transfer-Encoding: chunked
+11 < Connection: keep-alive
+11 < Access-Control-Allow-Origin: *
+11 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+11 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+11 < Server: Jetty(9.2.9.v20150224)
+{
+  "code": 1,
+  "type": "error",
+  "message": "User not found"
+}
+
+
+00:00:55.617 [main] DEBUG com.intuit.karate - retry condition not satisfied: responseStatus == 200
+00:00:55.618 [main] DEBUG com.intuit.karate - sleeping before retry #11
+00:00:58.621 [main] DEBUG com.intuit.karate - request:
+12 > GET https://petstore.swagger.io/v2/user/user_c781c09a-3e6d-4a9b-93b8-edc58e63e24b
+12 > Host: petstore.swagger.io
+12 > Connection: Keep-Alive
+12 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+12 > Accept-Encoding: gzip,deflate
+
+
+00:00:58.887 [main] DEBUG com.intuit.karate - response time in milliseconds: 266
+12 < 404
+12 < Date: Mon, 12 May 2025 05:00:59 GMT
+12 < Content-Type: application/json
+12 < Transfer-Encoding: chunked
+12 < Connection: keep-alive
+12 < Access-Control-Allow-Origin: *
+12 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+12 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+12 < Server: Jetty(9.2.9.v20150224)
+{
+  "code": 1,
+  "type": "error",
+  "message": "User not found"
+}
+
+
+00:00:58.887 [main] DEBUG com.intuit.karate - retry condition not satisfied: responseStatus == 200
+00:00:58.888 [main] DEBUG com.intuit.karate - sleeping before retry #12
+00:01:01.904 [main] DEBUG com.intuit.karate - request:
+13 > GET https://petstore.swagger.io/v2/user/user_c781c09a-3e6d-4a9b-93b8-edc58e63e24b
+13 > Host: petstore.swagger.io
+13 > Connection: Keep-Alive
+13 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+13 > Accept-Encoding: gzip,deflate
+
+
+00:01:02.167 [main] DEBUG com.intuit.karate - response time in milliseconds: 263
+13 < 404
+13 < Date: Mon, 12 May 2025 05:01:02 GMT
+13 < Content-Type: application/json
+13 < Transfer-Encoding: chunked
+13 < Connection: keep-alive
+13 < Access-Control-Allow-Origin: *
+13 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+13 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+13 < Server: Jetty(9.2.9.v20150224)
+{
+  "code": 1,
+  "type": "error",
+  "message": "User not found"
+}
+
+
+00:01:02.167 [main] DEBUG com.intuit.karate - retry condition not satisfied: responseStatus == 200
+00:01:02.167 [main] DEBUG com.intuit.karate - sleeping before retry #13
+00:01:05.177 [main] DEBUG com.intuit.karate - request:
+14 > GET https://petstore.swagger.io/v2/user/user_c781c09a-3e6d-4a9b-93b8-edc58e63e24b
+14 > Host: petstore.swagger.io
+14 > Connection: Keep-Alive
+14 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+14 > Accept-Encoding: gzip,deflate
+
+
+00:01:05.455 [main] DEBUG com.intuit.karate - response time in milliseconds: 278
+14 < 404
+14 < Date: Mon, 12 May 2025 05:01:05 GMT
+14 < Content-Type: application/json
+14 < Transfer-Encoding: chunked
+14 < Connection: keep-alive
+14 < Access-Control-Allow-Origin: *
+14 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+14 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+14 < Server: Jetty(9.2.9.v20150224)
+{
+  "code": 1,
+  "type": "error",
+  "message": "User not found"
+}
+
+
+00:01:05.456 [main] DEBUG com.intuit.karate - retry condition not satisfied: responseStatus == 200
+00:01:05.456 [main] DEBUG com.intuit.karate - sleeping before retry #14
+00:01:08.457 [main] DEBUG com.intuit.karate - request:
+15 > GET https://petstore.swagger.io/v2/user/user_c781c09a-3e6d-4a9b-93b8-edc58e63e24b
+15 > Host: petstore.swagger.io
+15 > Connection: Keep-Alive
+15 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+15 > Accept-Encoding: gzip,deflate
+
+
+00:01:08.724 [main] DEBUG com.intuit.karate - response time in milliseconds: 267
+15 < 404
+15 < Date: Mon, 12 May 2025 05:01:09 GMT
+15 < Content-Type: application/json
+15 < Transfer-Encoding: chunked
+15 < Connection: keep-alive
+15 < Access-Control-Allow-Origin: *
+15 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+15 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+15 < Server: Jetty(9.2.9.v20150224)
+{
+  "code": 1,
+  "type": "error",
+  "message": "User not found"
+}
+
+
+00:01:08.724 [main] DEBUG com.intuit.karate - retry condition not satisfied: responseStatus == 200
+00:01:08.724 [main] DEBUG com.intuit.karate - sleeping before retry #15
+00:01:11.733 [main] DEBUG com.intuit.karate - request:
+16 > GET https://petstore.swagger.io/v2/user/user_c781c09a-3e6d-4a9b-93b8-edc58e63e24b
+16 > Host: petstore.swagger.io
+16 > Connection: Keep-Alive
+16 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+16 > Accept-Encoding: gzip,deflate
+
+
+00:01:11.997 [main] DEBUG com.intuit.karate - response time in milliseconds: 262
+16 < 404
+16 < Date: Mon, 12 May 2025 05:01:12 GMT
+16 < Content-Type: application/json
+16 < Transfer-Encoding: chunked
+16 < Connection: keep-alive
+16 < Access-Control-Allow-Origin: *
+16 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+16 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+16 < Server: Jetty(9.2.9.v20150224)
+{
+  "code": 1,
+  "type": "error",
+  "message": "User not found"
+}
+
+
+00:01:11.997 [main] DEBUG com.intuit.karate - retry condition not satisfied: responseStatus == 200
+00:01:11.997 [main] DEBUG com.intuit.karate - sleeping before retry #16
+00:01:15.011 [main] DEBUG com.intuit.karate - request:
+17 > GET https://petstore.swagger.io/v2/user/user_c781c09a-3e6d-4a9b-93b8-edc58e63e24b
+17 > Host: petstore.swagger.io
+17 > Connection: Keep-Alive
+17 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+17 > Accept-Encoding: gzip,deflate
+
+
+00:01:15.275 [main] DEBUG com.intuit.karate - response time in milliseconds: 264
+17 < 404
+17 < Date: Mon, 12 May 2025 05:01:15 GMT
+17 < Content-Type: application/json
+17 < Transfer-Encoding: chunked
+17 < Connection: keep-alive
+17 < Access-Control-Allow-Origin: *
+17 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+17 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+17 < Server: Jetty(9.2.9.v20150224)
+{
+  "code": 1,
+  "type": "error",
+  "message": "User not found"
+}
+
+
+00:01:15.276 [main] DEBUG com.intuit.karate - retry condition not satisfied: responseStatus == 200
+00:01:15.276 [main] DEBUG com.intuit.karate - sleeping before retry #17
+00:01:18.291 [main] DEBUG com.intuit.karate - request:
+18 > GET https://petstore.swagger.io/v2/user/user_c781c09a-3e6d-4a9b-93b8-edc58e63e24b
+18 > Host: petstore.swagger.io
+18 > Connection: Keep-Alive
+18 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+18 > Accept-Encoding: gzip,deflate
+
+
+00:01:18.554 [main] DEBUG com.intuit.karate - response time in milliseconds: 263
+18 < 404
+18 < Date: Mon, 12 May 2025 05:01:18 GMT
+18 < Content-Type: application/json
+18 < Transfer-Encoding: chunked
+18 < Connection: keep-alive
+18 < Access-Control-Allow-Origin: *
+18 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+18 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+18 < Server: Jetty(9.2.9.v20150224)
+{
+  "code": 1,
+  "type": "error",
+  "message": "User not found"
+}
+
+
+00:01:18.555 [main] DEBUG com.intuit.karate - retry condition not satisfied: responseStatus == 200
+00:01:18.555 [main] DEBUG com.intuit.karate - sleeping before retry #18
+00:01:21.571 [main] DEBUG com.intuit.karate - request:
+19 > GET https://petstore.swagger.io/v2/user/user_c781c09a-3e6d-4a9b-93b8-edc58e63e24b
+19 > Host: petstore.swagger.io
+19 > Connection: Keep-Alive
+19 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+19 > Accept-Encoding: gzip,deflate
+
+
+00:01:21.836 [main] DEBUG com.intuit.karate - response time in milliseconds: 264
+19 < 404
+19 < Date: Mon, 12 May 2025 05:01:22 GMT
+19 < Content-Type: application/json
+19 < Transfer-Encoding: chunked
+19 < Connection: keep-alive
+19 < Access-Control-Allow-Origin: *
+19 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+19 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+19 < Server: Jetty(9.2.9.v20150224)
+{
+  "code": 1,
+  "type": "error",
+  "message": "User not found"
+}
+
+
+00:01:21.836 [main] DEBUG com.intuit.karate - retry condition not satisfied: responseStatus == 200
+00:01:21.837 [main] DEBUG com.intuit.karate - sleeping before retry #19
+00:01:24.850 [main] DEBUG com.intuit.karate - request:
+20 > GET https://petstore.swagger.io/v2/user/user_c781c09a-3e6d-4a9b-93b8-edc58e63e24b
+20 > Host: petstore.swagger.io
+20 > Connection: Keep-Alive
+20 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+20 > Accept-Encoding: gzip,deflate
+
+
+00:01:25.146 [main] DEBUG com.intuit.karate - response time in milliseconds: 295
+20 < 404
+20 < Date: Mon, 12 May 2025 05:01:25 GMT
+20 < Content-Type: application/json
+20 < Transfer-Encoding: chunked
+20 < Connection: keep-alive
+20 < Access-Control-Allow-Origin: *
+20 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+20 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+20 < Server: Jetty(9.2.9.v20150224)
+{
+  "code": 1,
+  "type": "error",
+  "message": "User not found"
+}
+
+
+00:01:25.146 [main] DEBUG com.intuit.karate - retry condition not satisfied: responseStatus == 200
+00:01:25.146 [main] ERROR com.intuit.karate - classpath:examples/users/user-crud.feature:70
+* method get
+too many retry attempts: 20
+classpath:examples/users/user-crud.feature:70
+]]></system-out>
+  </testcase>
+  <testcase name="[6:76] 5 - Eliminar el usuario" classname="examples/users/user-crud" time="0.466">
+    <failure message="status code was: 404, expected: 200, response time in milliseconds: 264, url: https://petstore.swagger.io/v2/user/user_932a6cc1-5922-46ab-926d-a2315e8ea232, response: &#10;&#10;classpath:examples/users/user-crud.feature:79" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+status code was: 404, expected: 200, response time in milliseconds: 264, url: https://petstore.swagger.io/v2/user/user_932a6cc1-5922-46ab-926d-a2315e8ea232, response: 
+
+classpath:examples/users/user-crud.feature:79
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:135)
+	at com.intuit.karate.junit5.FeatureNode.lambda$next$1(FeatureNode.java:86)
+	at org.junit.jupiter.engine.descriptor.DynamicTestTestDescriptor.lambda$execute$0(DynamicTestTestDescriptor.java:53)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.api.extension.InvocationInterceptor.interceptDynamicTest(InvocationInterceptor.java:167)
+	at org.junit.jupiter.api.extension.InvocationInterceptor.interceptDynamicTest(InvocationInterceptor.java:184)
+	at org.junit.jupiter.engine.descriptor.DynamicTestTestDescriptor.lambda$execute$1(DynamicTestTestDescriptor.java:61)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptorCall.lambda$ofVoid$0(InvocationInterceptorChain.java:78)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.descriptor.DynamicTestTestDescriptor.execute(DynamicTestTestDescriptor.java:60)
+	at org.junit.jupiter.engine.descriptor.DynamicTestTestDescriptor.execute(DynamicTestTestDescriptor.java:32)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor.execute(NodeTestTask.java:226)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor.execute(NodeTestTask.java:204)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEachOrdered(ReferencePipeline.java:502)
+	at org.junit.jupiter.engine.descriptor.DynamicContainerTestDescriptor.execute(DynamicContainerTestDescriptor.java:67)
+	at org.junit.jupiter.engine.descriptor.DynamicContainerTestDescriptor.execute(DynamicContainerTestDescriptor.java:33)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor.execute(NodeTestTask.java:226)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask$DefaultDynamicTestExecutor.execute(NodeTestTask.java:204)
+	at java.base/java.util.Optional.ifPresent(Optional.java:183)
+	at org.junit.jupiter.engine.descriptor.TestFactoryTestDescriptor.lambda$invokeTestMethod$1(TestFactoryTestDescriptor.java:108)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestFactoryTestDescriptor.invokeTestMethod(TestFactoryTestDescriptor.java:95)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:50)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[00:01:25.165 [main] DEBUG com.intuit.karate - request:
+1 > DELETE https://petstore.swagger.io/v2/user/user_932a6cc1-5922-46ab-926d-a2315e8ea232
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/11.0.20)
+1 > Accept-Encoding: gzip,deflate
+
+
+00:01:25.429 [main] DEBUG com.intuit.karate - response time in milliseconds: 264
+1 < 404
+1 < Date: Mon, 12 May 2025 05:01:25 GMT
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+
+
+00:01:25.430 [main] ERROR com.intuit.karate - classpath:examples/users/user-crud.feature:79
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 264, url: https://petstore.swagger.io/v2/user/user_932a6cc1-5922-46ab-926d-a2315e8ea232, response: 
+
+classpath:examples/users/user-crud.feature:79
+---------------------------------------------------------
+feature: classpath:examples/users/user-crud.feature
+scenarios:  6 | passed:  3 | failed:  3 | time: 126,3626
+---------------------------------------------------------
+
+Karate version: 1.4.1
+======================================================
+elapsed: 126,57 | threads:    1 | thread time: 126,36 
+features:     1 | skipped:    0 | efficiency: 1,00
+scenarios:    6 | passed:     3 | failed: 3
+======================================================
+>>> failed features:
+too many retry attempts: 20
+classpath:examples/users/user-crud.feature:49
+too many retry attempts: 20
+classpath:examples/users/user-crud.feature:70
+status code was: 404, expected: 200, response time in milliseconds: 264, url: https://petstore.swagger.io/v2/user/user_932a6cc1-5922-46ab-926d-a2315e8ea232, response: 
+
+classpath:examples/users/user-crud.feature:79
+<<<
+
+HTML report: (paste into browser to view) | Karate version: 1.4.1
+file:///C:/Users/andyn/OneDrive/Documents/Proyecto_QA/petstore-api-test/target/karate-reports/karate-summary.html
+===================================================================
+
+]]></system-out>
+  </testcase>
+</testsuite>
