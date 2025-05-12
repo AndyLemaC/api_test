@@ -17,8 +17,8 @@ Este proyecto automatiza pruebas sobre la API pública de [Petstore Swagger](htt
 ### 1️⃣ Clonar el Repositorio
 
 ```bash
-git clone https://github.com/tu-usuario/petstore-api-automation.git
-cd petstore-api-automation
+git clone https://github.com/AndyLemaC/api_test.git
+cd petstore-api-test
 ```
 
 ### 2️⃣ Configurar IntelliJ IDEA
