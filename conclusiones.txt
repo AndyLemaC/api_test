@@ -29,4 +29,5 @@ Conclusiones
    -Implementar funciones utilitarias, modularizar acciones comunes y agregar soporte para múltiples entornos mejoraría la escalabilidad del framework y lo prepararía para su uso en pipelines CI/CD más complejos.
    -Desarrollo de mecanismos de validación más inteligentes que puedan adaptarse a las peculiaridades de la API, como la inconsistencia en las actualizaciones de la API Petstore.
    -Configuración de la ejecución paralela de pruebas para reducir el tiempo total de ejecución, especialmente importante cuando el conjunto de pruebas crece.
-   -Mejora de los mecanismos para manejar errores y comportamientos inesperados de la API, especialmente en situaciones donde la API Petstore muestra inconsistencias como en las operaciones de
+   -Mejora de los mecanismos para manejar errores y comportamientos inesperados de la API, especialmente en situaciones donde la API Petstore muestra inconsistencias como en las operaciones de actualización.
+
