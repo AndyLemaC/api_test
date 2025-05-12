@@ -1,0 +1,32 @@
+Hallazgos y Conclusiones
+
+Hallazgos
+
+1. Latencia variable:
+   - Las respuestas no siempre fueron consistentes, especialmente después de hacer POST o PUT. Para corregirlo, se opto por aplicar reintentos y pausas estabilizar la ejecución.
+
+2. Datos poco consistentes:
+   - Se pudo notar que en algunas ocaciones, los datos enviados no estaban disponibles de inmediato, esto provoco en la implementación de validaciones.
+
+3. Dependencias entre operaciones:
+   - Una de las dificultades que se encontro fue la sincronización los estados de la API en operaciones continuas ya que no siempre devolvia los datos esperados al validar un metodo GET e inmediatamente un POST.
+
+4. Verificación explícita:
+   - Se creo un 'feature' especifico a la veridicacion de usuarios para aumentar la confiabilidad y reducir los falsos negativos.
+
+Conclusiones
+
+1. Fiabilidad:
+   - El script generado se destaca en la organización de escenarios y su forma de gestionar reintentos frente para la API, por lo que incorporar validaciones mas dinamicas y una mejor gestion de errores aumentaria la confiabilidad en general.
+
+2. Tiempos de Espera:
+   - La configuración global de timeouts y reintentos son efectivos para estabilizar las ejecuciones frente a respuestas lentas.Pero podría beneficiarse al ajustar tiempos de espera por tipo de operaciones y agregar pausas inteligentes entre pasos críticos mejorando la precisión de las validaciones.
+
+3. Mantenimeinto y Escalabilidad:
+   - El proyecto esta encaminado a un buena estructura y uso de datos externos, pero se necesita mayor modularidad, reutilización de lógica y soporte para múltiples entornos.
+
+4. Recomendaciones:
+   -Implementar funciones utilitarias, modularizar acciones comunes y agregar soporte para múltiples entornos mejoraría la escalabilidad del framework y lo prepararía para su uso en pipelines CI/CD más complejos.
+   -Desarrollo de mecanismos de validación más inteligentes que puedan adaptarse a las peculiaridades de la API, como la inconsistencia en las actualizaciones de la API Petstore.
+   -Configuración de la ejecución paralela de pruebas para reducir el tiempo total de ejecución, especialmente importante cuando el conjunto de pruebas crece.
+   -Mejora de los mecanismos para manejar errores y comportamientos inesperados de la API, especialmente en situaciones donde la API Petstore muestra inconsistencias como en las operaciones de
